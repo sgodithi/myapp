@@ -5,6 +5,7 @@ Myapp::Application.routes.draw do
   # get "static_pages/contact"
   # get "static_pages/about"
   
+  resources :users
   root  'static_pages#home'
   match '/signup',  to: 'users#new',            via: 'get'
   match '/help',    to: 'static_pages#help',    via: 'get'
